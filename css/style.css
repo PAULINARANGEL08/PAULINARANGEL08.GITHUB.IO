@@ -1,0 +1,446 @@
+body {
+    font-family: 'Montserrat';
+    height: 1550px;
+  }
+  
+  /* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  width: 1500px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0c6170;
+  background-color: white;
+}
+#navBar h1 {
+  width: 25%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0c6170;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0c6170;
+}
+
+.menu{
+  width: 276px;
+  height: 21px;
+  flex-grow: 0;
+  margin: 0 7px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0c6170;
+}
+.right button {
+  width: 123px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 342px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #6a8f8b;
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+/* Grid CSS */
+#heroGrid {
+  background-image: url("../images/Parallax\ Image.png");
+  background-repeat: none;
+  background-size:100%;
+  background-position: center;
+  height: 680px;
+  width: 1500px;
+  margin: 0px 0%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Picture Picture Picture""text text text" ;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+img{
+  display:grid;
+  grid-template-columns:"Picture";
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  margin: 88px 37px 99px 162px
+}
+
+.heroGridArea{
+  display: grid;
+  grid-template-rows: 50%;
+  float: right;
+}
+
+#Picture{
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: "Picture";
+}
+
+#text{
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-areas:"text";
+  width: 514px;
+  height: 93px;
+  margin: 0px 774px 151px;
+  font-family: Montserrat;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+/* Typography CSS */
+
+.introducction{
+  margin-top:20px;
+}
+.text {
+  margin: 20px 37px 0 0;
+  padding: 0 33px 0 75px;
+
+}
+
+h1 {
+  width: 395px;
+  height: 68px;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #6e9290;
+}
+
+.h2 {
+  width: 467px;
+  height: 73px;
+  margin: 0 47px 32px 0;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+p {
+  width: 514px;
+  height: 93px;
+  margin: 32px 0 20px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+#Phrase{
+  width: 531px;
+  height: 72px;
+  margin: 50px 450px 20px 450px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24354a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UXCASESTUDIES {
+  width: 593px;
+  height: 29px;
+  margin: 1px 423px 60px 424px;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6e9290;
+}
+
+.heading{
+  width: 295px;
+  height: 40px;
+  margin: 470px 0px 0px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0c6170;
+}
+
+.Name{
+  width: 295px;
+  height: 40px;
+  margin: -90px 50px 490px;
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cf996a;
+}
+
+footer{
+  height: 207px;
+  width: 1440px;
+  flex-grow: 0;
+  padding: 22px 0 0;
+  background-color: #ffffff;
+  align-items: center;
+  margin: 600px 0px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.Title{
+  width: 593px;
+  height: 29px;
+  margin: -50px 450px 80px 424px;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6e9290;
+}
+
+.p5{
+  width: 613px;
+  height: 66px;
+  margin: 22.3px 0 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.p6{
+  width: 613px;
+  height: 66px;
+  margin: 22.3px 0 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+/* Category Grid CSS */
+
+
+#ArrowDown{
+  grid-area: "ArrowDown";
+  justify-content: center;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+}
+
+#categoryGrid {
+  margin: 0px 0%;
+  display:grid;
+  grid-template-rows: 0% 0% 0%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "USDA" "ConnorBudget" "Global";
+  justify-content: space-around;
+  align-items: center;
+  margin: 297px 293px;
+  width: 945px;
+}
+
+#USDA {
+  grid-area: "USDA";
+  background-image: url("../images/USDA.png");
+  width: 295px;
+  height: 455px;
+  position:center;
+}
+
+#ConnorBudget {
+  grid-area: "ConnorBudget";
+  background-image: url("../images/ConnorBudget.png");
+  width: 295px;
+  height: 455px;
+  position: center;
+}
+
+#Global {
+  grid-area: "Global";
+  background-image: url("../images/Global.png");
+  width: 295px;
+  height: 455px;
+  position: center;
+}
+
+#Tools{
+  width: 1500px;
+  height: 227px;
+  margin: -400px 0px 350px 0px;
+  background-color: #ECDCC5;
+
+}
+
+#categoryGridArea3{
+  margin: 0px 0%;
+  display:grid;
+  grid-template-rows: 0% 0% 0%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "Icons";
+  align-items: center;
+}
+
+#Icons{
+  grid-area: "Icons";
+  background-image: url("../images/tools.png");
+  width: 927px;
+  height: 83px;
+  margin: 5px 240px;
+}
+
+#Galery {
+  display:grid;
+  grid-template-rows: 0% 0% 0%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "Animations" "Illustrations" "Packing";
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 90px;
+  width: 1260px;
+}
+
+#Animations {
+  grid-area: "Animations";
+  background-image: url("../images/Animations.png");
+  width: 400px;
+  height: 461px;
+  position:center;
+  justify-content: space-around;
+}
+
+#Illustrations {
+  grid-area: "Illustrations";
+  background-image: url("../images/Illustrations.png");
+  width: 400px;
+  height: 461px;
+  position: center;
+  justify-content: space-around;
+}
+
+#Packing {
+  grid-area: "Packing";
+  background-image: url("../images/Packing.png");
+  width: 400px;
+  height: 461px;
+  position: center;
+  justify-content: space-around;
+}
+
+#ThankU{
+  background-image: url("../images/ThankU.png");
+  width: 1500px;
+  height: 568.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -600px 0px;
+}
