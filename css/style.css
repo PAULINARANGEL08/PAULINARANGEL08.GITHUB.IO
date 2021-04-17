@@ -104,18 +104,16 @@ body {
   grid-template-areas: "Picture Picture Picture""text text text" ;
 }
 
-.column {
-  float: left;
-  width: 100%;
-}
-
-img{
+#myPicture{
+  background-image: url("../images/IMG_4959.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   display:grid;
-  grid-template-columns:"Picture";
+  grid-template-areas:"Picture";
   border-radius: 50%;
   width: 500px;
   height: 500px;
-  margin: 88px 37px 99px 162px
+  margin: 88px 37px 99px 162px;
 }
 
 .heroGridArea{
