@@ -1,13 +1,16 @@
 body {
-    font-family: 'Montserrat';
-    height: 1550px;
-  }
-  
-  /* Navigation CSS */
+  font-family: 'Montserrat';
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
-  width: 1500px;
-  height: 80px;
+  /*width: 100vw;*/
+  /*height: 80px;*/
   display: flex;
   flex-direction: row;
   font-family: Montserrat;
@@ -21,6 +24,7 @@ body {
   color: #0c6170;
   background-color: white;
 }
+
 #navBar h1 {
   width: 25%;
   font-family: Montserrat;
@@ -37,7 +41,7 @@ body {
   display: flex;
   width: 50%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
@@ -49,17 +53,17 @@ body {
   color: #0c6170;
 }
 
-.menu{
+.menu {
   width: 276px;
   height: 21px;
   flex-grow: 0;
   margin: 0 7px 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
 }
 
-#navigation p {
+#navigation p{
   cursor: pointer;
   text-decoration: none;
   font-family: Montserrat;
@@ -71,16 +75,18 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #0c6170;
+ 
 }
+
 .right button {
   width: 123px;
-  height: 48px;
+  height: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 0 0 0 342px;
+  margin: 15px 20px 10px 100px;
   padding: 10px 20px;
   border-radius: 50px;
   background-color: #6a8f8b;
@@ -88,92 +94,117 @@ body {
   text-align: center;
 }
 
-
 /* Grid CSS */
 #heroGrid {
-  background-image: url("../images/Parallax\ Image.png");
+  background-image: url('../images/Parallax\ Image.png');
   background-repeat: none;
-  background-size:100%;
+  background-size: 100%;
   background-position: center;
   height: 680px;
-  width: 1500px;
+  width: 100vw;
   margin: 0px 0%;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-auto-columns: 1fr 1fr 1fr;
-  grid-template-areas: "Picture Picture Picture""text text text" ;
+  grid-template-areas: 'Picture Picture Picture' 'text text text'; */
+  display: flex;
+  /* border: 5px solid hotpink; */
 }
 
-#myPicture{
+.pic {
   background-image: url("../images/IMG_4959.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  display:grid;
-  grid-template-areas:"Picture";
   border-radius: 50%;
   width: 500px;
   height: 500px;
-  margin: 88px 37px 99px 162px;
+  max-width: 70%;
+  min-width: 50%;
+  margin: 10%;
+  display: flex;
+  float: right;
+  flex: 1;
+  align-content: center;
+  justify-items: center;
+  align-self: center;
 }
 
-.heroGridArea{
+.description {
+  flex: 1;
+  margin: 100px 250px 0px 20px;
+
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+/*img {
+  display: grid;
+  grid-template-columns: 'Picture';
+  border-radius: 50%;
+  max-width: 70%;
+  min-width: 50%;
+  margin: 10%;/*
+}
+
+/* .heroGridArea {
   display: grid;
   grid-template-rows: 50%;
   float: right;
-}
+} */
 
-#Picture{
+#Picture {
   display: grid;
   grid-template-columns: 50%;
-  grid-template-areas: "Picture";
+  grid-template-areas: 'Picture';
 }
 
-#text{
+#text {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 100%;
-  grid-template-areas:"text";
-  width: 514px;
+  grid-template-areas: 'text';
+  width: 50%;
   height: 93px;
   margin: 0px 774px 151px;
   font-family: Montserrat;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
+  border: 5px solid pink;
 }
-
 
 /* Typography CSS */
 
-.introducction{
-  margin-top:20px;
+.introducction {
+  margin-top: 20px;
 }
 .text {
   margin: 20px 37px 0 0;
   padding: 0 33px 0 75px;
-
 }
 
 h1 {
-  width: 395px;
-  height: 68px;
+  /* width: 395px; */
+  /* height: 68px; */
   font-family: Montserrat;
-  font-size: 50px;
+  font-size: 3vw;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: right;
+  text-align: left;
   color: #6e9290;
 }
 
 .h2 {
-  width: 467px;
-  height: 73px;
+  /* width: 467px;
+  height: 73px; */
   margin: 0 47px 32px 0;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -198,7 +229,7 @@ p {
   color: #000000;
 }
 
-#Phrase{
+#Phrase {
   width: 531px;
   height: 72px;
   margin: 50px 450px 20px 450px;
@@ -231,7 +262,7 @@ p {
   color: #6e9290;
 }
 
-.heading{
+.heading {
   width: 295px;
   height: 40px;
   margin: 470px 0px 0px;
@@ -246,7 +277,7 @@ p {
   color: #0c6170;
 }
 
-.Name{
+.Name {
   width: 295px;
   height: 40px;
   margin: -90px 50px 490px;
@@ -260,28 +291,43 @@ p {
   color: #cf996a;
 }
 
-footer{
+footer {
   height: 207px;
-  width: 1440px;
-  flex-grow: 0;
-  padding: 22px 0 0;
+  width: 100vw;
+  padding: 22px;
+  margin-bottom: -60px;
   background-color: #ffffff;
   align-items: center;
-  margin: 600px 0px;
+  margin-top: 600px;
+  margin-bottom: -20;
+  padding-bottom: -20;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
-  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.footer{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+  color: #000000;
 }
 
-.Title{
+.Title {
   width: 593px;
   height: 29px;
-  margin: -50px 450px 80px 424px;
+  margin: -80px 450px 80px 424px;
   font-family: Montserrat;
   font-size: 50px;
   font-weight: bold;
@@ -293,7 +339,8 @@ footer{
   color: #6e9290;
 }
 
-.p5{
+/*
+footer .p6 {
   width: 613px;
   height: 66px;
   margin: 22.3px 0 0;
@@ -306,28 +353,12 @@ footer{
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-}
-
-.p6{
-  width: 613px;
-  height: 66px;
-  margin: 22.3px 0 0;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000000;
-}
+} */
 
 /* Category Grid CSS */
 
-
-#ArrowDown{
-  grid-area: "ArrowDown";
+#ArrowDown {
+  grid-area: 'ArrowDown';
   justify-content: center;
   cursor: pointer;
   width: 38px;
@@ -335,89 +366,92 @@ footer{
 }
 
 #categoryGrid {
-  margin: 0px 0%;
-  display:grid;
-  grid-template-rows: 0% 0% 0%;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-areas: "USDA" "ConnorBudget" "Global";
+  width:60vw;
+  display: grid;
   justify-content: space-around;
   align-items: center;
-  margin: 297px 293px;
-  width: 945px;
+  grid-template-rows: 0% 0% 0%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: 'USDA' 'ConnorBudget' 'Global';
+  margin: 295px 295px;
+  /*width: 945px;*/
 }
 
 #USDA {
-  grid-area: "USDA";
-  background-image: url("../images/USDA.png");
+  grid-area: 'USDA';
+  background-image: url('../images/USDA.png');
   width: 295px;
   height: 455px;
-  position:center;
+  position: center;
 }
 
 #ConnorBudget {
-  grid-area: "ConnorBudget";
-  background-image: url("../images/ConnorBudget.png");
+  grid-area: 'ConnorBudget';
+  background-image: url('../images/ConnorBudget.png');
   width: 295px;
   height: 455px;
   position: center;
 }
 
 #Global {
-  grid-area: "Global";
-  background-image: url("../images/Global.png");
+  grid-area: 'Global';
+  background-image: url('../images/Global.png');
   width: 295px;
   height: 455px;
   position: center;
 }
 
-#Tools{
-  width: 1500px;
+#Tools {
+  width: 100vw;
+  margin: 0px 0%;
   height: 227px;
   margin: -400px 0px 350px 0px;
-  background-color: #ECDCC5;
-
+  background-color: #ecdcc5;
 }
 
-#categoryGridArea3{
+#categoryGridArea3 {
   margin: 0px 0%;
-  display:grid;
+  display: grid;
   grid-template-rows: 0% 0% 0%;
   grid-template-columns: 33% 33% 33%;
-  grid-template-areas: "Icons";
+  grid-template-areas: 'Icons';
   align-items: center;
 }
 
-#Icons{
-  grid-area: "Icons";
-  background-image: url("../images/tools.png");
+#Icons {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/tools.png');
   width: 927px;
   height: 83px;
-  margin: 5px 240px;
+  margin: 0px 0px 0px 310px;
 }
 
 #Galery {
-  display:grid;
+  display: grid;
   grid-template-rows: 0% 0% 0%;
   grid-template-columns: 33% 33% 33%;
-  grid-template-areas: "Animations" "Illustrations" "Packing";
+  grid-template-areas: 'Animations' 'Illustrations' 'Packing';
   justify-content: space-around;
   align-items: center;
-  margin: 20px 90px;
-  width: 1260px;
+  width: 100vw;
+  margin: 3.5%;
 }
 
 #Animations {
-  grid-area: "Animations";
-  background-image: url("../images/Animations.png");
+  grid-area: 'Animations';
+  background-image: url('../images/Animations.png');
   width: 400px;
   height: 461px;
-  position:center;
+  position: center;
   justify-content: space-around;
 }
 
 #Illustrations {
-  grid-area: "Illustrations";
-  background-image: url("../images/Illustrations.png");
+  grid-area: 'Illustrations';
+  background-image: url('../images/Illustrations.png');
   width: 400px;
   height: 461px;
   position: center;
@@ -425,17 +459,18 @@ footer{
 }
 
 #Packing {
-  grid-area: "Packing";
-  background-image: url("../images/Packing.png");
+  grid-area: 'Packing';
+  background-image: url('../images/Packing.png');
   width: 400px;
   height: 461px;
   position: center;
   justify-content: space-around;
 }
 
-#ThankU{
-  background-image: url("../images/ThankU.png");
-  width: 1500px;
+#ThankU {
+  background-image: url('../images/ThankU.png');
+  width: 100vw;
+  margin: 0px 0%;
   height: 568.2px;
   display: flex;
   align-items: center;
